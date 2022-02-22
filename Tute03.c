@@ -1,3 +1,4 @@
+
 /*Exercise 3 - Repetition
 
 Write a C program to calculate the sum of the numbers from 1 to n.
@@ -13,6 +14,18 @@ sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
 int main() {
+
+  int i,num, total=0;
+  
+  printf("n -> ");
+  scanf("%d", &num);
+  
+  for( i=1; i<=num; i++ )
+  {
+    total = total + i;
+  }
+
+  printf("sum = %d\n", total);
   
   return 0;
 }
